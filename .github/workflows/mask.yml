@@ -1,5 +1,8 @@
 name: mask
 
+on:
+  workflow-dispatch:
+
 jobs:
   mask:
     runs-on: ubuntu-latest

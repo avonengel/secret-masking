@@ -1,0 +1,8 @@
+name: mask
+
+jobs:
+  mask:
+    runs-on: ubuntu-latest
+    steps:
+      output:
+        run: echo "Axel von Engel"

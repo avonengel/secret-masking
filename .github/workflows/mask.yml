@@ -4,5 +4,5 @@ jobs:
   mask:
     runs-on: ubuntu-latest
     steps:
-      output:
+      - name: output
         run: echo "Axel von Engel"

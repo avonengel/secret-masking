@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: output
         run: echo "Axel von Engel"
-      - name: output one secret
-        run: echo "${{ secrets.AXEL }}"
+#      - name: output one secret
+#        run: echo "${{ secrets.AXEL }}"

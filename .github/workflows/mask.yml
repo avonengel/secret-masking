@@ -9,5 +9,8 @@ jobs:
     steps:
       - name: output
         run: echo "Axel von Engel"
-#      - name: output one secret
-#        run: echo "${{ secrets.AXEL }}"
+      - name: determine secret name
+        id: secret_name
+        run: echo "::set-output name=secret_name::foo"
+      - name: output one secret
+        run: echo "${{ secrets[steps.secret_name.outputs.secret_name] }}"
